@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Library Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="dashboard-card">
+
+        <div class="dashboard-title">
+            <div>🏠 Library Dashboard</div>
+            <div class="dashboard-subtitle">
+                YOUR LIBRARY · YOUR COLLECTION · YOUR SPACE
+            </div>
+        </div>
+
+        <div class="section-label">
+            WELCOME{% if name %}, {{ name.upper() }}{% endif %}
+        </div>
+
+        <a href="{{ url_for('issue_book') }}" class="dashboard-btn green">
+            <span>＋</span>
+            <div>
+                Issue Book
+            </div>
+            <div class="dashboard-arrow">→</div>
+        </a>
+
+        <a href="{{ url_for('view_books') }}" class="dashboard-btn purple">
+            <span>▣</span>
+            <div>
+                View Book Collection
+            </div>
+            <div class="dashboard-arrow">→</div>
+        </a>
+
+        <div class="dashboard-info">
+
+            <div class="dashboard-info-box">
+                <strong>📚 Manage Books</strong>
+                <small>Record and organize issued books easily.</small>
+            </div>
+
+            <div class="dashboard-info-box">
+                <strong>🔎 View Records</strong>
+                <small>Check all stored library records anytime.</small>
+            </div>
+
+            <div class="dashboard-info-box">
+                <strong>✨ Smart Library</strong>
+                <small>Everything organized in one place.</small>
+            </div>
+
+        </div>
+
+        <a href="{{ url_for('logout') }}" class="logout">
+            <h3>Logout</h3>
+        </a>
+
+        <p class="page-note">
+            LIBRARY · ORGANIZE · DISCOVER
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

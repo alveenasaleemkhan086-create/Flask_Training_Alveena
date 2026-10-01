@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="home-card">
+
+        <div class="home-top">
+            <div class="home-brand">LIBRARY MANAGEMENT · SMART DIGITAL SPACE</div>
+            <div class="home-status">• YOUR DIGITAL LIBRARY</div>
+        </div>
+
+        <div class="home-content">
+
+            <div class="home-left">
+
+                <h1>
+                    Library<br>
+                    Management<br>
+                    System
+                </h1>
+
+                <p class="home-subtitle">
+                    Organize your collection. Discover new stories.
+                    Manage your books smartly and keep every borrowed
+                    book within reach.
+                </p>
+
+                <div class="home-tag">
+                    ✦ SMART LIBRARY PORTAL
+                </div>
+
+                <div class="home-buttons">
+                    <a href="{{ url_for('signup') }}" class="btn blue">Sign Up</a>
+                    <a href="{{ url_for('login') }}" class="btn purple">Login</a>
+                </div>
+
+                <div class="home-checks">
+                    <span>Easy access</span>
+                    <span>Organized collection</span>
+                    <span>Borrowing history</span>
+                </div>
+
+            </div>
+
+            <div class="home-right">
+
+                <div class="book-visual">
+                    <div class="book-stack">📚</div>
+                    <div class="book-spark">✦</div>
+                </div>
+
+                <div class="collection-card">
+                    BOOK COLLECTION · 248
+                </div>
+
+                <div class="portal-card">
+                    ✦ Manage & Discover
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="home-bottom">
+
+            <div class="home-feature">
+                <div class="home-feature-icon">📖</div>
+                <h3>Manage Your Books</h3>
+                <p>Keep book issue details organized in one smart space.</p>
+            </div>
+
+            <div class="home-feature">
+                <div class="home-feature-icon">🔐</div>
+                <h3>Secure Access</h3>
+                <p>Sign in to access your personal library dashboard.</p>
+            </div>
+
+            <div class="home-feature">
+                <div class="home-feature-icon">✨</div>
+                <h3>Simple & Smart</h3>
+                <p>Issue books and view records without complicated steps.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

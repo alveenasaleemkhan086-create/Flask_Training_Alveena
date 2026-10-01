@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Library Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="form-card">
+
+        <div class="form-icon">📚</div>
+
+        <h2>Create Account</h2>
+
+        <p class="form-subtitle">
+            Join your smart digital library
+        </p>
+
+        <form method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Choose a username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Create a password" required>
+
+            <button type="submit" class="form-btn">
+                Create Account →
+            </button>
+
+        </form>
+
+        {% if message %}
+        <div class="error">{{ message }}</div>
+        {% endif %}
+
+        <p class="account-text">
+            Already have an account?
+            <a href="{{ url_for('login') }}">Login</a>
+        </p>
+
+        <p class="page-note">
+            Organize · Issue · Discover
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

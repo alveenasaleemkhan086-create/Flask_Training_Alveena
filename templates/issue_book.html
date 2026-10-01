@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Issue Book - Library Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="form-card issue-card">
+
+        <div class="form-icon">📖</div>
+
+        <h2>Issue a Book</h2>
+
+        <p class="form-subtitle">
+            Add a new book issue record to your library
+        </p>
+
+        <form method="POST">
+
+            <label>Book ID</label>
+            <input type="text" name="book_id" placeholder="Enter book ID" required>
+
+            <label>Book Name</label>
+            <input type="text" name="book_name" placeholder="Enter book name" required>
+
+            <label>Book Number</label>
+            <input type="text" name="book_number" placeholder="Enter book number" required>
+
+            <label>Name of Student</label>
+            <input type="text" name="student_name" placeholder="Enter student name" required>
+
+            <label>Issue Date</label>
+            <input type="date" name="issue_date" required>
+
+            <label>Due Date</label>
+            <input type="date" name="due_date" required>
+
+            <button type="submit" class="form-btn">
+                Submit Book Issue →
+            </button>
+
+        </form>
+
+        <p class="page-note">
+            Save every borrowing record safely and keep your collection organized.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

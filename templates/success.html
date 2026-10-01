@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success - Library Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="success-card">
+
+        <div class="success-icon">✓</div>
+
+        <h2 class="success-title">
+            Book Issued Successfully
+        </h2>
+
+        <div class="success-message">
+            ✓ Book issue record has been saved
+        </div>
+
+        <div class="details">
+
+            <p>
+                <strong>Book Name</strong>
+                <span>:</span>
+                <span>{{ book_name }}</span>
+            </p>
+
+            <p>
+                <strong>Student Name</strong>
+                <span>:</span>
+                <span>{{ student_name }}</span>
+            </p>
+
+            <p>
+                <strong>Issue Date</strong>
+                <span>:</span>
+                <span>{{ issue_date }}</span>
+            </p>
+
+            <p>
+                <strong>Due Date</strong>
+                <span>:</span>
+                <span>{{ due_date }}</span>
+            </p>
+
+        </div>
+
+        <div class="success-buttons">
+
+            <a href="{{ url_for('dashboard') }}" class="btn blue">
+                Dashboard
+            </a>
+
+            <a href="{{ url_for('view_books') }}" class="btn purple">
+                View Books
+            </a>
+
+        </div>
+
+        <p class="page-note">
+            Your library record has been updated successfully.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
