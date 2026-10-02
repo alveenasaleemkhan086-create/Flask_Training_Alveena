@@ -4,3 +4,4 @@ bcrypt
 Flask_SQLAlchemy
 mysqlclient
 pymysql
+gunicorn
